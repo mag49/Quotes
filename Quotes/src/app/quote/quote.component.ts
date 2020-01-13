@@ -13,7 +13,7 @@ export class QuoteComponent implements OnInit {
     new Quote(5,'Abraham Lincoln', 'If friendship is your weakest point, your the strongest person in the world', 'Meghan may', new Date(5,1,2020)),
     new Quote(6,'Mike Ditka', 'Your never a loser until you quit trying', 'Mary jane', new Date(6,1,2020)),
   ];
-
+ 
   constructor() { }
 
   ngOnInit() {
