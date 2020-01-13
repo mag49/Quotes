@@ -13,7 +13,24 @@ export class QuoteComponent implements OnInit {
     new Quote(5,'Abraham Lincoln', 'If friendship is your weakest point, your the strongest person in the world', 'Meghan may', new Date(5,1,2020)),
     new Quote(6,'Mike Ditka', 'Your never a loser until you quit trying', 'Mary jane', new Date(6,1,2020)),
   ];
- 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+      this.quotes.splice(index,1);
+      }
+    }
+  }
+  addNewGoal(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit() {

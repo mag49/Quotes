@@ -5,7 +5,7 @@ export class Quote {
     constructor(
         public id:number,
         public name:string,
-        public quote:string,
+        public description:string,
         public author:string,
         public datePublished:Date
     ){
