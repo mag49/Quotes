@@ -25,6 +25,6 @@ export class QuoteVoteComponent implements OnInit {
   }
 
   dislikeButtonClick() {
-    this.downVotes++;
+    this.upVotes++;
   }
 }
