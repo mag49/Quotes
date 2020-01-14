@@ -1,6 +1,8 @@
 export class Quote {
 
     showDescription:boolean;
+    upVotes:number;
+    downVotes:number;
 
     constructor(
         public id:number,
@@ -10,6 +12,8 @@ export class Quote {
         public datePublished:Date
     ){
         this.showDescription = false;
+        this.upVotes=0;
+        this.downVotes=0;
     }
 
 }

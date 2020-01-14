@@ -7,8 +7,8 @@ import {Quote} from '../quote';
   styleUrls: ['./quote-vote.component.css']
 })
 export class QuoteVoteComponent implements OnInit {
-  numberOfLikes = 0;
-  numberOfDislikes = 0;
+  upVotes= 0;
+  downVotes= 0;
 
   constructor() {
   }
@@ -20,11 +20,11 @@ export class QuoteVoteComponent implements OnInit {
   }
 
   likeButtonClick() {
-    this.Upvote.emit(this.numberOfLikes);
-    this.numberOfLikes++;
+    this.Upvote.emit(this.upVotes);
+    this.upVotes++;
   }
 
   dislikeButtonClick() {
-    this.numberOfDislikes++;
+    this.downVotes++;
   }
 }
