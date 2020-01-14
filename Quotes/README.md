@@ -21,6 +21,9 @@ As a user i want to:
 -Open the folder in your favourite editor for atom >>atom . for visual studio code >> code .
 -To run the website in your browser >> navigate to `http://localhost:3301/`
 
+## Code Badge
+[![codebeat badge](https://codebeat.co/badges/fc7b3260-da58-49bd-aaf3-ba6f409cfbd8)](https://codebeat.co/projects/github-com-mag49-quotes-master)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
