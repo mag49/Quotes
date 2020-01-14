@@ -1,7 +1,7 @@
 <p>
     {{quote.description}}</p>
     <p>Submitted by {{quote.author}}, {{quote.datePublished|dateCount}} days ago</p>
-    <button (click)='upVote' class="btn btn-outline-danger">up Vote {{quote.upVote}}</button>
-    <button (click)='downVote'class="btn btn-outline-danger">Down Vote {{quote.downVote}}</button>
+    <button class="btn btn-outline-danger">up Vote {{quote.upVotes}}</button>
+    <button class="btn btn-outline-danger">Down Vote {{quote.downVotes}}</button>
     <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
    

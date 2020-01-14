@@ -12,7 +12,7 @@
          
           <div *ngIf='quote.showDescription'>
                 <div class="col-4">
-                        <p><app-quote-vote [quote]='quote'(upVote)="addUpvote($event, i)" (downVote)="addDowvote($event,i)"></app-quote-vote></p>
+                        <p><app-quote-vote [quote]='quote'></app-quote-vote></p>
                     </div>
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
           </div>

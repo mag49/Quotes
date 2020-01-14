@@ -30,8 +30,8 @@
         <div class="form-group">
   
             <label for="complete">Date</label>
-            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
-            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+            <input type='date' id="complete" [(ngModel)]="newQuote.datePublished" name="datepublished" #datePublished="ngModel" required>
+            <div [hidden]="datePublished.valid || datePublished.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>
         </div>
